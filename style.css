@@ -275,6 +275,7 @@ a:hover{
     background-color: black;
     border-radius: 2rem;
     height: 100%;
+    animation: fill 2s ease-in-out;   
 }
 .html{
     width: 90%;
@@ -290,4 +291,9 @@ a:hover{
 }
 .react{
     width: 50%;
+}
+@keyframes fill{
+    0%{
+        width: 0;
+    }
 }
