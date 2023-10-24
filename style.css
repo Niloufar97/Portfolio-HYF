@@ -234,3 +234,60 @@ a:hover{
     padding: 1rem;
     margin: 1rem;
 }
+/* SKILLS */
+#skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.skills-title h2 , p{
+    text-align: center;
+}
+.skills-title h2{
+    font-size: 38px;
+}
+.skill-bar-container{
+    width: 80%;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.skill-name{
+    
+    margin: 1rem;
+}
+.skil-bar{
+    width: 100%;
+    height: 1rem;
+    border: 1px solid darkgray;
+    border-radius: 2rem;
+    background-color: #c1c1c1;
+    display: flex;
+    
+    align-items: center;
+}
+.skill-level{
+    background-color: black;
+    border-radius: 2rem;
+    height: 100%;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 75%;
+}
+.bootstrap{
+    width: 70%;
+}
+.js{
+    width: 80%;
+}
+.react{
+    width: 50%;
+}
