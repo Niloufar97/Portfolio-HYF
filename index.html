@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niloufar portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Niloufar Khaefi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Niloufar Khaefi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenue()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenue()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenue()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenue()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenue()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-pic">
+            <img src="./assets/niloufar.jpg" alt="">
+        </div>
+        <div class="profile-txt">
+            <p>hello, I'm</p>
+            <h2>Niloufar Khaefi!</h2>
+            <h3>A Joniur Forntend Developer</h3>
+            <div class="profile-btn">
+                <button class="btn" onclick="window.open('./assets/Niloufar-cv.pdf')">Download CV</button>
+                <button class="btn" onclick="location.href = '#contact'">Contact Info</button>
+            </div>
+            <div class="SoMe">
+                <a href="https://github.com/Niloufar97"><img src="assets/square-github.svg" alt="" ></a>
+                <a href="https://www.linkedin.com/in/niloufar-khaefi/"><img src="assets/linkedin.svg"   alt=""></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
