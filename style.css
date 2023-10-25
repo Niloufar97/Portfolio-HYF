@@ -181,3 +181,56 @@ a:hover{
     width: 2rem;
     height: 2rem;
 }
+/* ABOUT */
+#about{
+    /* min-height: 100vh; */
+    margin: 1rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:3rem ;
+}
+.about-title p, h2{
+    text-align: center;
+}
+.about-title h2{
+    font-size: 38px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-pic img{
+    width: 30rem;
+    height: 30rem;
+    margin: 2rem;
+    border: 1px solid darkgray;
+    border-radius: 1.5rem;
+}
+.experience-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience , .education{
+    width: 15rem;
+    height: 6rem;
+    border: 1px solid darkgray;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+.about-me{
+    width: 40rem;
+    padding: 1rem;
+    margin: 1rem;
+}
