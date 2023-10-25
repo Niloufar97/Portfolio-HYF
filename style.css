@@ -370,10 +370,6 @@ a:hover{
     
 }
 .contact-me{
-    border: 1px solid darkgray;
-    border-radius: 3rem;
-    width: 40%;
-    height: 15%;
     margin: 2rem;
     display: flex;
     justify-content: space-around;
@@ -382,7 +378,14 @@ a:hover{
 }
 .email , .linkdin{
     display: flex;
+    justify-content: center;
     align-items: center;
+    border: 1px solid darkgray;
+    border-radius: 3rem;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem;
+
     
 }
 .email img , .linkdin img{
