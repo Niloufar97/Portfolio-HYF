@@ -7,6 +7,7 @@
     <title>Niloufar portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -55,10 +56,10 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-duration="2000">
         <div class="about-title">
             <p>Get To Know More</p>
-            <h2>About Me</h2>
+            <h2 class="big-font">About Me</h2>
         </div>
         <div class="about-container">
             <div class="about-pic">
@@ -91,10 +92,10 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-duration="2000">
         <div class="skills-title">
             <p>Explore My</p>
-            <h2>Skills</h2>
+            <h2 class="big-font">Skills</h2>
         </div>
         <div class="skill-bar-container">
             <div class="skill">
@@ -142,10 +143,10 @@
             </div>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-duration="2000">
         <div class="project-title">
             <p>Browse My</p>
-            <h2>Projects</h2>
+            <h2 class="big-font">Projects</h2>
         </div>
         <div class="projects-container">
             <div class="project">
@@ -186,8 +187,41 @@
             </div>
         </div>
     </section>
-
+    <section id="contact" data-aos="fade-up" data-aos-duration="2000">
+        <div class="contact-title">
+            <p>Get In Touch</p>
+            <h2 class="big-font">Contact Me</h2>
+        </div>
+        <div class="contact-me">
+            <div class="email">
+                <img src="assets/103176_mail_email_icon.svg" alt="">
+                <a href="mailto:nilooooofar97@gmail.com">nilooooofar97@gmail.com</a>
+            </div>
+            <div class="linkdin">
+                <img src="assets/linkedin.svg" alt="">
+                <a href="https://www.linkedin.com/in/niloufar-khaefi">Niloufar-Khaefi</a>
+            </div>
+        </div>
+        <div class="bottom-page">
+            <nav class="bottom-nav">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>copyright © 2023 Niloufar.All Rights Reserved</p>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
