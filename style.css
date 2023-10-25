@@ -187,7 +187,7 @@ a:hover{
 /* ABOUT -----------------------------------------------------------*/
 #about{
     min-height: 100vh;
-    margin: 1rem auto 2rem;
+    margin: 5rem auto 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,7 +296,7 @@ a:hover{
 }
 /* PROJECTS---------------------------------------------------------------- */
 #projects{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -385,8 +385,6 @@ a:hover{
     width: 20rem;
     height: 5rem;
     margin: 1rem;
-
-    
 }
 .email img , .linkdin img{
     width: 2rem;
