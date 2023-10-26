@@ -1,13 +1,9 @@
-@media screen and (max-width: 1200px){
-    #desktop-nav{
-        display: none;
-    }
-    #hamburger-nav{
-        display: flex;
-    }
-}
+
 /* RESPONSIVE */
 @media screen and (max-width:700px) {
+    .logo{
+        display: none;
+    }
     #profile{
         flex-direction: column;
         min-height: 100vh;
