@@ -1,6 +1,6 @@
 
 /* RESPONSIVE */
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
     .logo{
         display: none;
     }
@@ -20,7 +20,7 @@
         width: 70%;  
     } 
 }
-@media screen and (min-width: 700px) and (max-width: 1200px){
+@media screen and (min-width: 600px) and (max-width: 1200px){
     .projects-container{
         flex-wrap: wrap;
     }
