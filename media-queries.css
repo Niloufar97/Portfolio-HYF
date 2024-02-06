@@ -1,14 +1,37 @@
-
-/* RESPONSIVE */
-@media screen and (max-width:600px) {
-    .logo{
+@media screen and (max-width: 1200px){
+    #desktop-nav{
         display: none;
     }
+    #showOffcanvas{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-pic img{
+        width: 20rem;
+        height: 20rem;
+    }
+    #about{
+        margin-top: 8rem;
+    }
+    
+}
+/* RESPONSIVE */
+@media screen and (max-width:700px) {
     #profile{
         flex-direction: column;
         min-height: 100vh;
     }
     .about-container,.projects-container, .contact-me{
+        flex-direction: column;
+    }
+    .about-pic img{
+        width: 25rem;
+        height: 25rem;
+    }
+    .about-me{
+        width: 35rem;
+    }
+    .experience-box{
         flex-direction: column;
     }
     .projects-container{
@@ -20,7 +43,7 @@
         width: 70%;  
     } 
 }
-@media screen and (min-width: 600px) and (max-width: 1200px){
+@media screen and (min-width: 700px) and (max-width: 1200px){
     .projects-container{
         flex-wrap: wrap;
     }
@@ -28,4 +51,9 @@
         flex-direction: column;
         min-height: 100vh;
     }
+    .profile-pic img{
+        width: 25rem;
+        height: 25rem;
+    }
 }
+

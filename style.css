@@ -13,7 +13,7 @@ html{
 p{
     color: rgb(85, 85, 85);
 }
-/* TRANSITIONS--------------------------------------------------- */
+/* TRANSITIONS */
 a , .btn{
     transition: all 300ms ease;
 }
@@ -50,6 +50,63 @@ a:hover{
 .logo:hover{
     cursor: default;
 }
+/* offcanvos styles----------------------- */
+#showOffcanvas{
+    display: none;
+    margin: 1.5rem 1.5rem 5rem;
+}
+#offcanvas {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transition: right 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+#openOffcanvas ,#closeOffcanvas{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#openOffcanvas img, #closeOffcanvas img{
+    width: 2rem;
+    height: 2rem;
+}
+#offcanvas .offcanvas-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: baseline;
+   margin:rem;
+}
+.offcanvas-body form{
+    margin-top: 2rem;
+}
+.offcanvas-body ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    gap: 2rem;
+}
+.offcanvas-body ul li{
+    font-size: larger;
+    cursor: pointer;
+}
+.offcanvas-body ul li a{
+    text-decoration: none;
+    color: black;
+}
 /* PROFILE -----------------------------------------------------*/
 #profile{
     display: flex;
@@ -57,7 +114,7 @@ a:hover{
     align-items: center;
     width: 80%;
     height: 80vh;
-    margin: 0 auto;
+    margin: 2.5rem auto;
 }
 .profile-pic img{
     width: 25rem;
@@ -116,12 +173,7 @@ a:hover{
     margin: 0.5rem 1rem;
     width: 2rem;
     height: 2rem;
-    transition: all 0.3s ease-in;
 }
-.SoMe-links img:hover{
-    transform: scale(1.5);
-}
-
 /* ABOUT -----------------------------------------------------------*/
 #about{
     min-height: 100vh;
@@ -171,6 +223,9 @@ a:hover{
     width: 40rem;
     padding: 1rem;
     margin: 1rem;
+}
+.about-me p{
+    text-align: justify;
 }
 /* SKILLS -------------------------------------------------------*/
 #skills{

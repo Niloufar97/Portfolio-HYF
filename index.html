@@ -11,18 +11,38 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Niloufar Khaefi</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header>
+        <nav id="desktop-nav">
+            <h1 class="logo">Niloufar Khaefi</h1>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="showOffcanvas">
+            <div class="logo">Niloufar Khaefi</div>
+            <button id="openOffcanvas"><img src="assets/icons8-menu.svg"></button>
         </div>
-    </nav>
-    <header id="profile">
+        <div id="offcanvas">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Niloufar Khaefi</h2>
+                <button id="closeOffcanvas"><img src="assets/icons8-close.svg"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="profile">
         <div class="profile-pic">
             <img src="./assets/profile-niloufar.jpg" alt="">
         </div>
@@ -39,7 +59,7 @@
                 <a href="https://www.linkedin.com/in/niloufar-khaefi/"><img src="assets/linkedin.svg" alt=""></a>
             </div>
         </div>
-    </header>
+    </section>
     <section id="about" data-aos="fade-up" data-aos-duration="2000">
         <div class="about-title">
             <p>Get To Know More</p>
@@ -63,7 +83,7 @@
                     </div>
                 </div>
                 <div class="about-me">
-                    <p>In early 2023, I embarked on a transformative journey into the world of frontend development,
+                    <p>In early 2023, I embarked on a transformative journey into   the world of frontend development,
                         igniting a passion for crafting captivating web interfaces. My journey commenced with
                         self-study, delving into the foundational realms of HTML and CSS. Eager to expand my knowledge
                         and hone my skills, I enrolled in ReDi School's JavaScript course, delving deeper into the
@@ -76,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section id="skills" data-aos="fade-up" data-aos-duration="2000" >
+    <section id="skills" data-aos="fade-up" data-aos-duration="2000">
         <div class="skills-title">
             <p>Explore My</p>
             <h2 class="big-font">Skills</h2>
@@ -142,7 +162,7 @@
                     <p>HTML and CSS</p>
                 </div>
                 <div class="project-link">
-                    <a href="">See Project</a>
+                    <a href="">Live Demo</a>
                 </div>
             </div>
             <div class="project">
@@ -154,9 +174,7 @@
                     <p>HTML and CSS</p>
                 </div>
                 <div class="project-link">
-                    <a
-                        href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">See
-                        Project</a>
+                    <a href="">Live Demo</a>
                 </div>
             </div>
             <div class="project">
@@ -168,7 +186,7 @@
                     <p>JavaScript</p>
                 </div>
                 <div class="project-link">
-                    <a href="https://github.com/Niloufar97/to-do-list">See Project</a>
+                    <a href="">Live Demo</a>
                 </div>
             </div>
         </div>
@@ -202,13 +220,12 @@
             <p>copyright © 2023 Niloufar.All Rights Reserved</p>
         </div>
     </section>
-
-
+    
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-    
 </body>
 
 </html>
