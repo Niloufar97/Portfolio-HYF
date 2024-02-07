@@ -1,5 +1,6 @@
 const openOffcanvasButton = document.getElementById("openOffcanvas");
 const offcanvas = document.getElementById("offcanvas");
+
 openOffcanvasButton.addEventListener("click", function () {
   offcanvas.style.right = offcanvas.style.right === "0" ? "-100%" : "0";
 });
@@ -9,3 +10,10 @@ const closeOffcanvas = () => {
 };
 const closeOffcanvasButton = document.getElementById("closeOffcanvas");
 closeOffcanvasButton.addEventListener("click", closeOffcanvas);
+
+const offcanvasLink =document.querySelectorAll(".offcanvas-link");
+offcanvasLink.forEach(link => {
+  link.addEventListener('click', () => {
+    closeOffcanvas();
+  })
+});
