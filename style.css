@@ -113,8 +113,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 80vh;
-    margin: 2.5rem auto;
+    margin: 1rem auto;
 }
 .profile-pic img{
     width: 25rem;
@@ -289,6 +288,7 @@ a:hover{
 }
 /* PROJECTS---------------------------------------------------------------- */
 #projects{
+    margin-top: 3rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -296,57 +296,47 @@ a:hover{
 
 .projects-container{
     display: flex;
+    justify-content: center;
     margin: 2rem;
+    flex-wrap: wrap;
 }
-.project{
+ .project{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     height: 70vh;
     border: 1px solid darkgray;
     border-radius: 1rem;
     margin: 2rem;
     box-shadow: 6px 6px 35px -2px rgba(66, 68, 90, 1);
 }
-.project-pic{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .project img{
-    width: 80%;
-    height: 70%;
+    margin: 1rem auto;
+    width: 85%;
+    height: 60%;
     border: 1px solid darkgray;
     border-radius: 1rem;
-}
-.project-txt{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.project-txt h3{
-    font-size: 26px;
-}
-.project-link{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-link a{
-    padding: 0.5rem 2rem;
-    border: 1px solid darkgray;
-    border-radius: 2rem;
-    text-decoration: none;
     
 }
-.project-link a:hover{
-    background-color: black;
-    color: white;
+.project-card-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.project-card-form button{
+    width: 8rem;
+    border:1px solid gray;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2rem;
+    transition: all 0.2s ease-in;
+}
+.project-card-form button:hover{
+    transform: scale(1.1);
 }
 /* CONTACT--------------------------------------------------- */
 #contact{
