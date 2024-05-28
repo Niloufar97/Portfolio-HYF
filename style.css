@@ -8,16 +8,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: #f4f4f4; 
 }
-/* font */
+/* font --------------------------------------*/
 .salsa-regular {
     font-family: "Salsa", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
-/* Navbar */
+/* Navbar--------------------------------------------- */
 nav {
     display: flex;
     justify-content: space-around;
@@ -44,14 +45,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-/* home page */
+/* home page ------------------------------*/
 .hero {
     position: relative; 
     height: 100vh;
     width: 100vw;
-    background-image: url('./assets/niloufar.jpg');
+    background-image: url('./assets/Niloufar.jpg');
     background-size: cover;
-    background-position: center;
+    background-position:center;
+    background-repeat: no-repeat;
     background-color: #333;
     display: flex;
     justify-content: center;
@@ -66,12 +68,12 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.65); 
 }
 
 .hero-content {
     position: absolute;
-    top: 50%; 
+    top: 45%; 
     left: 60%; 
     transform: translateY(-50%); 
     text-align: center; 
@@ -105,8 +107,8 @@ section {
     width: 100%; 
 }
 
+
 #about, #projects, #contact {
-    background-color: #f4f4f4;
     margin: 2em 0;
 }
 
@@ -124,6 +126,68 @@ section {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white; }
+}
+
+/* about------------------------------------- */
+.about-content {
+    width: 100%;
+    margin:1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content p {
+    margin-bottom: 2rem;
+}
+.info{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem; 
+}
+.info p{
+    width: 50%;
+    text-align: justify;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.info img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.moreInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.education,
+.experience,
+.skills {
+    margin-top: 2rem;
+}
+
+.education h3,
+.experience h3,
+.skills h3{
+    margin-bottom: 1rem;
+}
+
+.education ul,
+.experience ul,
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education li,
+.experience li,
+.skills li{
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 499px) {
