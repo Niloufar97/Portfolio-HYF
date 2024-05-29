@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
           setTimeout(() => {
               cvButton.style.opacity = '1'; 
-          }, 1500);
+          }, 100);
       }
   }
 
