@@ -7,7 +7,7 @@
     <title>Niloufar's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -30,14 +30,16 @@
         <div class="hero-content">
             <h1 class="typing-animation salsa-regular" id="line1"></h1>
             <h1 class="typing-animation typing-cursor salsa-regular" id="line2" style="display: none;"></h1>
-            <button>My CV</button>
+            <button>
+                <a href="./assets/cv/Niloufar.pdf" target="_blank">My CV</a>
+            </button>
         </div>
     </section>
     <!-- about -->
     <section id="about">
         <h2 class="salsa-regular">About Me</h2>
-        <div class="about-content" >
-            <div class="info"  data-aos="fade" data-aos-duration="2000">
+        <div class="about-content">
+            <div class="info" data-aos="fade" data-aos-duration="2000">
                 <img src="./assets/undraw_dev_focus_re_6iwt.svg">
                 <p class="salsa-regular">
                     My name is Niloufar and I am a 27-year-old. In 2022, I made the life-changing decision to relocate
@@ -103,35 +105,66 @@
 
     <section id="projects">
         <h2 class="salsa-regular">Projects</h2>
-        <div class="projects-container" >
+        <div class="projects-container">
             <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./assets/project-img/MealSharing.png" alt="Project 1" class="card-img">
                 <h2 class="card-title">Meal Sharing</h2>
-                <a href="https://meal-sharing-dhq2.onrender.com/" target="_blank" class="card-btn">View Demo</a>
+                <p class="usedTech">React, Nodejs, MySQL</p>
+                <a href="https://meal-sharing-dhq2.onrender.com/" target="_blank" class="card-btn">Demo/Code</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./assets/project-img/memoryGame.png" alt="Project 2" class="card-img">
                 <h2 class="card-title">Memory Game</h2>
-                <a href="https://thriving-cendol-8adfa8.netlify.app/" target="_blank" class="card-btn">View Demo</a>
+                <p class="usedTech">HTML, CSS, JavaScript</p>
+                <a href="https://thriving-cendol-8adfa8.netlify.app/" target="_blank" class="card-btn">Demo/Code</a>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./assets/project-img/weather-app.png" alt="Project 3" class="card-img">
                 <h2 class="card-title">Weather App</h2>
+                <p class="usedTech">React, TypeScript, TailwindCSS</p>
                 <a href="https://weather-app-niloufar.netlify.app/" target="_blank" class="card-btn">Demo/Code</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="./assets/project-img/flown2png.png" alt="Project 3" class="card-img">
+                <h2 class="card-title">Kraftvark Project</h2>
+                <p class="usedTech">React, JavaScript</p>
+                <a href="https://github.com/Niloufar97/Kaospilot-toolbox" target="_blank" class="card-btn">Demo/Code</a>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="./assets/project-img/kaospilot-toolbox.png" alt="Project 3" class="card-img">
+                <h2 class="card-title">Kaospilot Toolbox</h2>
+                <p class="usedTech">HTML, CSS, JavaScript</p>
+                <a href="https://github.com/Niloufar97/Kaospilot-toolbox" target="_blank" class="card-btn">Demo/Code</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 class="salsa-regular">Contact</h2>
-        <p>This is the contact section where you can provide your contact details.</p>
+        <h2 class="salsa-regular">Contact Me</h2>
+        <div class="contact-container">
+            <button>
+                <a href="https://github.com/Niloufar97" target="_blank">
+                    <img src="./assets/github-142-svgrepo-com.svg" />
+                    <p>Niloufar97</p>
+                </a>
+            </button>
+            <button>
+                <a href="https://www.linkedin.com/in/niloufar-khaefi/" target="_blank">
+                    <img src="./assets/linkedin-svgrepo-com.svg" />
+                    <p>niloufar-khaefi</p>
+                </a>
+            </button>
+        </div>
     </section>
 
-    
+    <footer>
+        <p>© Copyright Portfolio. All Rights Reserved</p>
+        <p>Developed by Niloufar</p>
+    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 

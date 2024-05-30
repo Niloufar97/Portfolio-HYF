@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     background-color: #f4f4f4; 
@@ -79,7 +80,10 @@ nav ul li a {
     text-align: center; 
     max-width: 50%; 
 }
-
+.hero-content a{
+    color: black;
+    text-decoration: none;
+}
 
 .hero-content h1 {
     color: white;
@@ -103,14 +107,14 @@ nav ul li a {
     font-weight: 700;
 }
 section {
-    padding: 4em 2em;
+    padding: 3rem 2rem;
     text-align: center;
     width: 100%; 
 }
 
 
 #about, #projects, #contact {
-    margin: 2em 0;
+    margin: 2rem 0;
 }
 
 .typing-animation {
@@ -208,10 +212,10 @@ section {
 .projects-container {
     display: grid;
     gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     max-width: 1300px;
-    margin: 4rem auto;
+    margin: 4rem auto 0;
 }
 
 .card {
@@ -235,20 +239,67 @@ section {
 
 .card-title {
     font-size: 1.5rem;
-    margin: 15px 0;
+    margin: 1rem 0;
 }
-
+.usedTech{
+    margin-bottom: 1rem;
+}
 .card-btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-bottom: 20px;
-    background-color: #007bff;
-    color: #fff;
+    margin-bottom: 2rem;
+    color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 1rem;
+    /* border:1px solid #333; */
     transition: background-color 0.3s;
+    background-color: #c5d5e49c;
 }
 
 .card-btn:hover {
-    background-color: #0056b3;
+    font-weight: 600;
+}
+/* contact */
+.contact-container{
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    transition: all 0.3s ease-in;
+}
+.contact-container a{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; 
+    color: black;
+    text-decoration: none;
+}
+.contact-container button:hover{
+    transform: scale(1.1)
+}
+.contact-container a img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* footer */
+footer{
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+footer p{
+    margin: 0.5rem;
 }
