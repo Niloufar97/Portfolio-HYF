@@ -32,6 +32,10 @@
         gap: 1rem;
         width: 90%;
     }
+    /* projects */
+    .card-img {
+        height: 200px;
+    }
 }
 @media (min-width: 500px) and (max-width: 767.98px) {
     .hero{
