@@ -26,6 +26,11 @@ nav {
     align-items: center;
     background-color: #333;
     padding: 1em;
+    position: fixed; /* Make the navbar fixed */
+    top: 0;         /* Position it at the top */
+    left: 0;        /* Align it to the left */
+    width: 100%;
+    z-index: 1000;
 }
 nav h1{
     color: white;
@@ -48,7 +53,7 @@ nav ul li a {
 }
 /* home page ------------------------------*/
 .hero {
-    position: relative; 
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-image: url('./assets/Niloufar.jpg');
