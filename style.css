@@ -222,9 +222,9 @@ section {
     max-width: 1300px;
     margin: 4rem auto 0;
 }
-.projects-container .card:last-child {
+/* .projects-container .card:last-child {
     grid-column: 2 / 3; 
-}
+} */
 .card {
     background-color: #fff;
     border-radius: 10px;
